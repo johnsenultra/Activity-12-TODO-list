@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #183D3D;
+}
+
+main {
+    width: auto;
+    height: auto;
+    max-height: 40rem;
+    background-color: #fec89a;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#app h1 {
+    padding-top: 10px;
+    font-weight: 800;
+}
+
+#app input {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    width: 25rem;
+    height: 50px;
+    margin-top: 10px;
+    padding: 5px 0px;
+    border: 1px solid black;
+    border-radius: 7px;
+    outline: none;
+    background: #97FFF4;
+}
+
+#addTask {
+    font-size: 20px;
+    font-weight: bold;
+    width: 10rem;
+    border: 2px solid #183D3D;
+    border-radius: 8px;
+    outline-color: #85e6c5;
+    cursor: pointer;
+    padding: 5px;
+    margin: 10px;
+    background-color: #97FFF4;
+    text-transform: uppercase;
+}
+
+#addTask:hover {
+    background: #85E6C5;
+}
+
+#taskList li {
+    width: 40rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #97FFF4;
+}
+
+#taskList button {
+    padding: 10px;
+    margin-left: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #97FFF4;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+#taskList button:hover {
+    background-color: #fec89a;
+}  
+
+.done {
+    text-decoration: line-through;
+    color: #183D3D;
+    background-color: #97FFF4
+}
+
+@media (max-width: 400px) {
+    main {
+        width: 18rem;
+    }
+    #app input {
+        width: 15rem;
+    }
+}
