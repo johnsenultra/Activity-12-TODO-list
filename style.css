@@ -18,9 +18,9 @@ body {
 }
 
 main {
-    width: auto;
+    width: 40rem;
     height: auto;
-    max-height: 40rem;
+    max-height: 45rem;
     background-color: #fec89a;
     border: 1px solid black;
     border-radius: 20px;
@@ -42,11 +42,11 @@ main {
     text-align: center;
     font-size: 15px;
     font-weight: 600;
-    width: 25rem;
+    width: 33rem;
     height: 50px;
     margin-top: 10px;
     padding: 5px 0px;
-    border: 1px solid black;
+    border: none;
     border-radius: 7px;
     outline: none;
     background: #97FFF4;
@@ -71,20 +71,21 @@ main {
 }
 
 #taskList li {
-    width: 40rem;
+    font-weight: 500;
+    width: 35rem;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     margin: 10px;
     padding: 10px;
     border-radius: 10px;
     cursor: pointer;
+    overflow-wrap: break-word;
     background-color: #97FFF4;
 }
 
 #taskList button {
+    position: relative;
     padding: 10px;
-    margin-left: 20px;
     border: none;
     border-radius: 5px;
     background-color: #97FFF4;
@@ -97,9 +98,9 @@ main {
 }  
 
 .done {
-    text-decoration: line-through;
+    text-decoration: line-through red;
     color: #183D3D;
-    background-color: #97FFF4
+    background-color: #85E6C5;
 }
 
 @media (max-width: 400px) {
@@ -107,6 +108,9 @@ main {
         width: 18rem;
     }
     #app input {
+        width: 15rem;
+    }
+    #taskList li {
         width: 15rem;
     }
 }
