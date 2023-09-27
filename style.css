@@ -103,6 +103,30 @@ main {
     background-color: #85E6C5;
 }
 
+@media (max-width: 690px) {
+    main {
+        width: 32rem;
+    }
+    #app input {
+        width: 29rem;
+    }
+    #taskList li {
+        width: 29rem;
+    }
+}
+
+@media (max-width: 525px) {
+    main {
+        width: 26rem;
+    }
+    #app input {
+        width: 23rem;
+    }
+    #taskList li {
+        width: 23rem;
+    }
+}
+
 @media (max-width: 400px) {
     main {
         width: 18rem;
